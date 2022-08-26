@@ -7,7 +7,7 @@ use Illuminate\Support\ServiceProvider;
 class ScriptTimeLoggerServiceProvider extends ServiceProvider
 {
     public function boot() {
-        $this->loadMigrationsFrom(__DIR__.'/../migrations');
+        $this->loadMigrationsFrom(__DIR__.'/migrations');
     }
 
     /**

@@ -20,7 +20,7 @@ class ScriptTimeLog extends Model
      * @var array
      */
     protected $fillable = [
-        'cron',
+        'script',
         'duration',
         'note'
     ];

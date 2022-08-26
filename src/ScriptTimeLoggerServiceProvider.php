@@ -3,7 +3,6 @@
 namespace AmericanTechnologies\ScriptTimeLogger;
 
 use Illuminate\Support\ServiceProvider;
-use AmericanTechnologies\ScriptTimeLogger\Models\ScriptTimeLog;
 
 class ScriptTimeLoggerServiceProvider extends ServiceProvider
 {

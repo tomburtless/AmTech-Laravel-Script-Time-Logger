@@ -1,0 +1,28 @@
+{
+    "name": "american-technologies/laravel-script-time-logger",
+    "description": "Logs the runtime of a script to a database table, used for automated scripts to see fluctuations in time",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "AmericanTechnologies\\ScriptTimeLogger\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tom Burtless",
+            "email": "tomdburtless@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^9.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AmericanTechnologies\\ScriptTimeLogger\\ScriptTimeLoggerServiceProvider"
+            ]
+        }
+    }
+}

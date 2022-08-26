@@ -7,23 +7,22 @@ The AmTech Script Time Logger is an addon to Laravel that allows you track the d
 Use Composer to install into Laravel project.
 
 ```bash
-composer require american-technologies/laravel-console-logger
+composer require american-technologies/laravel-script-time-logger
 ```
 
 ## Usage
 
 ```php
 
+$scriptLog = new ScriptTimeLogger();
+
+$scriptLog->startTimer($nameOfScript);
+
 ...
 
+$scriptLog->endTimer($optionalNote)
+
 ```
-
-
-### Options
-
-| Option            | Type     | Required | Description                                     |
-| ----------------- | -------- | -------- | ----------------------------------------------- |
-| `script`          | `string` | yes      | Name of the script you are looking to log       |
 
 
 ## License

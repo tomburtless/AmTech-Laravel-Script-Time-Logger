@@ -12,7 +12,7 @@ class ScriptTimeLogger
         $this->startTime = microtime(true);
 
         $this->log = ScriptTimeLog::create([
-            'cron' => $scriptName
+            'script' => $scriptName
         ]);
     }  
 

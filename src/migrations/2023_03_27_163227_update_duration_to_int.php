@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('script_time_logs', function (Blueprint $table) {
-            $table->bigInteger('duration')->nullable();
+            $table->bigInteger('duration')->nullable()->change();
         });
     }
 
@@ -26,7 +26,7 @@ return new class extends Migration
     public function down()
     {
         Schema::table('script_time_logs', function (Blueprint $table) {
-            $table->string('duration')->nullable();
+            $table->string('duration')->nullable()->change();
         });
     }
 };
